@@ -1,0 +1,3 @@
+﻿Copia aqui tu cancion con el nombre: cancion.mp3
+Sonara al abrir el sobre de la invitacion (boton dorado abajo a la derecha para pausar).
+Recomendado: MP3 de menos de 5 MB para que cargue rapido en el celular.

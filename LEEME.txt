@@ -1,0 +1,49 @@
+INVITACIÓN · BODAS DE ORO (versión animada)
+============================================
+
+ARCHIVOS
+- portada.html ............ imagen interactiva (brillo, reflejo 3D, sello que late). Al tocarla hace zoom al sello y abre la invitación.
+- index.html .............. invitación: sobre que se abre, cuenta regresiva, historia, línea del tiempo, galería, detalles, confirmación.
+- css/portada.css, css/estilos.css ... estilos
+- js/oro.js ............... partículas y destellos dorados
+- js/portada.js ........... animación de la portada
+- js/invitacion.js ........ lógica de la invitación + CONFIGURACIÓN
+- portada-bodas-de-oro.png  imagen de portada
+- fotos/ .................. aquí van tus fotos (foto1.jpg ... foto6.jpg)
+- musica/ ................. aquí va tu canción (cancion.mp3)
+- portada-whatsapp.jpg .... imagen liviana para la vista previa en WhatsApp
+
+LO QUE TE FALTA LLENAR (busca "✏️ EDITAR" en index.html)
+1. Nombres de los abuelos (aparece 2 veces: arriba y al final).
+2. Hora y lugar, y código de vestimenta (sección "Detalles").
+3. Fotos: copia tus fotos a la carpeta "fotos" como foto1.jpg ... foto6.jpg
+   y cambia los textos [Pie de foto X] (en el <figcaption> y en data-caption).
+   Si una foto no existe se muestra un recuadro "Foto aquí".
+4. Textos de la línea del tiempo (opcional, ya tienen un texto genérico).
+
+En js/invitacion.js, al inicio (CONFIG):
+- whatsapp:  número que recibe confirmaciones (solo números, sin +). Ej.: 18095551234
+- ubicacion: dirección para el botón "Ver ubicación".
+- hora:      hora del evento, ej. "19:00" (se usa en la cuenta regresiva y el calendario).
+- musica:    ya apunta a "musica/cancion.mp3". Solo copia tu canción en la carpeta
+             "musica" con ese nombre. musicaInicio = segundo en que empieza.
+- youtube:   en vez del mp3 puedes pegar el enlace de un video de YouTube.
+             Ojo: algunos videos no permiten reproducirse fuera de YouTube
+             (entonces el botón de música no aparece), y puede salir publicidad.
+
+CÓMO PROBAR
+Abre portada.html en el navegador (mejor con un servidor local o ya publicado,
+porque algunos navegadores bloquean archivos locales).
+
+PUBLICAR GRATIS (GitHub Pages)
+Sube TODA la carpeta (con css, js y fotos) a un repositorio, activa Settings > Pages
+(rama main, carpeta /root) y comparte el enlace que termina en /portada.html.
+
+ENVIAR POR WHATSAPP (imagen que abre la web)
+1. Publica la carpeta (GitHub Pages) y en portada.html e index.html cambia
+   "https://TU-USUARIO.github.io/TU-REPO/" por tu dirección real (busca ✏️ EDITAR).
+2. En WhatsApp envía SOLO el enlace a portada.html. WhatsApp mostrará la imagen
+   de la invitación como vista previa; al tocarla se abre la web.
+   (Una foto enviada como imagen normal NO puede tener un enlace que se pueda tocar.)
+3. Si la vista previa no sale, espera unos minutos tras publicar; WhatsApp guarda
+   en caché los enlaces ya enviados.
