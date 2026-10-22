@@ -4,7 +4,7 @@
 const CONFIG = {
   // WhatsApp que recibe las confirmaciones: formato internacional,
   // solo números y sin "+". Ejemplo ficticio: "18095551234"
-  whatsapp: "",
+  whatsapp: "525614609131",
 
   // Lugar que se pone en el evento del calendario
   // (los botones "Ver ubicación" de la misa y la fiesta están en index.html).
@@ -298,7 +298,7 @@ const CONFIG = {
   });
 
   /* ---------- Agregar al calendario (.ics) ---------- */
-  $("calendarButton").addEventListener("click", () => {
+  $("calendarButton")?.addEventListener("click", () => {
     const pad = (n) => String(n).padStart(2, "0");
     const ymd = CONFIG.fecha.replace(/-/g, "");
     let start, end;
@@ -370,7 +370,7 @@ const CONFIG = {
     // Comparte la portada si existe (para que vean primero la imagen)
     return location.href.split("#")[0].replace(/index\.html$/, "portada.html");
   }
-  $("shareButton").addEventListener("click", async () => {
+  $("shareButton")?.addEventListener("click", async () => {
     const text = "✨ Estás invitado/a a la Boda de Oro de Andrea y Martin · 50 años de amor · 26 de diciembre de 2026.";
     if (navigator.share) {
       try { await navigator.share({ title: CONFIG.titulo, text, url: pageUrl() }); return; }
