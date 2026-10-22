@@ -2,6 +2,7 @@
    BODAS DE ORO · invitación animada
    ========================================================== */
 :root {
+  color-scheme: only light;
   --navy: #0b1d33;
   --navy-2: #102945;
   --navy-deep: #061223;
@@ -653,6 +654,7 @@ section { position: relative; padding: 96px 20px; }
 .photo:hover { rotate: 0deg; scale: 1.04; box-shadow: 0 22px 46px rgba(11, 29, 51, .2), 0 0 0 1px var(--gold); }
 .photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 2px; background: var(--paper); }
 .photo figcaption { margin-top: 10px; text-align: center; font-family: var(--f-script); font-size: 1.5rem; color: var(--gold-dark); }
+.photo .firma { display: block; margin-top: 4px; font-size: .8em; opacity: .85; }
 .photo.empty { cursor: default; }
 .photo.empty img { display: none; }
 .photo.empty::before {

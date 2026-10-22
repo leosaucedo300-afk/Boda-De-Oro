@@ -2,6 +2,7 @@
    PORTADA · imagen interactiva
    ========================================================== */
 :root {
+  color-scheme: only light;
   --navy: #0b1d33;
   --navy-deep: #050f1d;
   --gold: #d4af62;

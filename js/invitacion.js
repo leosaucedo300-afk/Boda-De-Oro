@@ -282,7 +282,7 @@ const CONFIG = {
       if (fig.classList.contains("empty")) return;
       $("lbImg").src = img.src;
       $("lbImg").alt = img.alt;
-      $("lbCaption").textContent = fig.querySelector("figcaption")?.textContent.trim() || "";
+      $("lbCaption").innerText = fig.querySelector("figcaption")?.innerText.trim() || "";
       lightbox.hidden = false;
       document.body.classList.add("locked");
     });
